@@ -1,0 +1,5 @@
+package com.dxc.ascept;
+
+public class LoggingAcept {
+
+}

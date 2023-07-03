@@ -1,0 +1,22 @@
+package com.dxc.dao;
+import java.util.List;
+
+import com.dxc.exception.RemainderNotFoundException;
+import com.dxc.model.Remainder;
+
+public interface RemainderDAO {
+	/*
+	 * Should not modify this interface. You have to implement these methods in
+	 * corresponding Impl classes
+	 */
+
+	public boolean createRemainder(Remainder remainder);
+
+	public boolean updateRemainder(Reminder remainder);
+
+	public boolean deleteRemainder(int reminderId);
+
+	public Remainder getRemainderById(int reminderId) throws RemainderNotFoundException;
+
+	public List<Remainder> getAllRemainderByUserId(String userId);
+}
